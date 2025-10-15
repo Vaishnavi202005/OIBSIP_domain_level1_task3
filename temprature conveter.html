@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    </style>
+</head>
+<body class="bg-white min-h-screen flex items-center justify-center">
+    <div class="bg-pink-200 p-6 rounded-2xl w-full max-w-lg shadow-lg shadow-pink-400">
+        <h1 class="text-2xl font-bold mb-4 text-center text-pink-600 mt-[-5px]">Temperature Converter</h1>
+        <div class="flex">
+        <div class="w-full max-w-lg bg-white shadow-lg shadow-pink-400 rounded-lg">
+            <h6 class="font-bold text-md text-pink-600 ml-3 mt-2 mb-[-3px]">Degree</h6><br/>
+            <input id="t1" type="number" class="w-48 p-2 rounded-lg border border-pink-400 shadow-lg shadow-pink-500 mb-10 mx-2 mt-[-5px]" placeholder="Enter Temprature"/>
+            <p id="nm" class="text-md font-bold text-red-600 mt-[-15px]"></h6>
+        </div>
+        <div class=" w-full mx-w-lg  bg-white shadow-lg shadow-pink-400 rounded-lg ml-3">
+            <h6 class="font-bold text-md text-pink-600 mt-2 ml-3 mb-[-3px]">Degree</h6><br/>
+             <select id="tempType" class="w-48 p-2 rounded-lg  border border-pink-400 shadow-lg shadow-pink-500  mb-10 ml-2 mt-[-5px]">
+             <option value="fahToCel">Fahrenheit to Celsius</option>
+             <option value="celToFeh">Celsius to Fahrenheit</option>
+             <option value="celToKel">Celsius to Kelvin</option>
+             <option value="fahToKel">Fahrenheit to Kelvin</option>
+    </select>
+        </div>
+        </div>
+        <div class="mt-2 w-full max-w-lg bg-white text-pink-600 shadow-lg shadow-pink-500 rounded-lg border border-pink-400">
+            <h6 class="font-bold text-md text-pink-600 mt-2 ml-3">Result</h6>
+            <div  id="res" class="bg-white w-full mx-w-md text-blue-500 px-3 py-4 mt-2"></div>
+        </div>
+        <br>
+        <div class="flex justify-center">
+            <button onclick="handleValid()" class="bg-pink-600 hover:bg-blue-700 text-white font-bold text-xl px-2 py-2 rounded w-full  shadow-lg shadow-pink-300">Convert</button>
+        </div>
+    </div>
+    <script src="temprature converter.js"></script>
+</body>
+</html>
